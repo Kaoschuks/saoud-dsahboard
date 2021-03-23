@@ -1,0 +1,21 @@
+
+<ion-card class="ion-no-padding">
+  <ion-item mode="md" detail="false" lines="none">
+    <ion-select value="last-3-month" slot="end" interface="pop-over">
+      <ion-select-option value="last-3-month">Last 3 Month</ion-select-option>
+      <ion-select-option value="last-month">Last Month</ion-select-option>
+      <ion-select-option value="last-week">Last Week</ion-select-option>
+      <ion-select-option value="today">Today</ion-select-option>
+    </ion-select>
+    <ion-avatar slot="start">
+      <img [src]="icon" />
+    </ion-avatar>
+  </ion-item>
+  <ion-item mode="md" detail="false" lines="none">
+    <ion-label>
+      <h2 class="bold">{{number}}</h2>
+      <p class="fs-12" color="light">{{title}}</p>
+    </ion-label>
+  </ion-item>
+  <canvas #lineCanvas></canvas>
+</ion-card>

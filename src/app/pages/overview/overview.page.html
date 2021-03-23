@@ -1,0 +1,79 @@
+<ion-header color="light" class="ion-padding ion-no-border">
+  <ion-toolbar>
+    <ion-item slot="end" detail="false" lines="none">
+      <ion-avatar slot="end">
+        <img src="assets/icon/profile.png" />
+      </ion-avatar>
+      <ion-label>
+        <h2>Support</h2>
+      </ion-label>
+    </ion-item>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="light" class="ion-no-padding">
+  <ion-grid>
+    <ion-row>
+      <ion-col size="12">
+        <ion-card>
+          <ion-item mode="ios" detail="false" lines="none">
+            <ion-label class="ion-text-wrap">
+              <h2>Strengthen your brand with a custom domain</h2>
+              <p class="fs-12">Your current domain is <a>https://demo.plugin.store</a> but you can add a custom domain to help customers find your online store </p>
+              <ion-button color="tertiary">
+                Add domain
+              </ion-button>
+            </ion-label>
+            <ion-thumbnail slot="end">
+              <img src="assets/icon/www.png" />
+            </ion-thumbnail>
+          </ion-item>
+        </ion-card>
+      </ion-col>
+      <ion-col size="12">
+        <ion-card>
+          <ion-item mode="ios" detail="false" lines="none">
+            <ion-label class="ion-text-wrap">
+              <h2>Keep track of your real time orders</h2>
+              <p class="fs-12">Live update of your real time orders.</p>
+              <ion-button color="tertiary">
+                View orders
+              </ion-button>
+            </ion-label>
+            <ion-thumbnail slot="end">
+              <img src="assets/icon/order.png" />
+            </ion-thumbnail>
+          </ion-item>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="12" size-md="3">
+        <chart-card [chartdata]="[65, 59, 80, 81, 56, 55, 40]" [icon]="'assets/icon/avatar-purple.png'" [number]="'1'" [title]="'Customer Gained'"></chart-card>
+      </ion-col>
+      <ion-col size="12" size-md="3">
+        <chart-card [chartdata]="[0, 53, 80, 81, 70, 65, 0]" [icon]="'assets/icon/avatar-green.png'" [number]="'195.04'" [title]="'Revenue Generated'"></chart-card>
+      </ion-col>
+      <ion-col size="12" size-md="3">
+        <chart-card [chartdata]="[65, 59, 80, 81, 56, 55, 40]" [icon]="'assets/icon/avatar-red.png'" [number]="'10'" [title]="'Sold Item'"></chart-card>
+      </ion-col>
+      <ion-col size="12" size-md="3">
+        <chart-card [chartdata]="[0, 53, 80, 81, 70, 65, 0]" [icon]="'assets/icon/avatar-orange.png'" [number]="'19'" [title]="'Order Recieved'"></chart-card>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="12" size-md="3">
+        <dashboard-card [icon]="'assets/icon/avatar-purple.png'" [number]="'0'" [title]="'Total Customer Gained'"></dashboard-card>
+      </ion-col>
+      <ion-col size="12" size-md="3">
+        <dashboard-card [icon]="'assets/icon/avatar-green.png'" [number]="'KWD 0.000'" [title]="'Total Revenue Generated'"></dashboard-card>
+      </ion-col>
+      <ion-col size="12" size-md="3">
+        <dashboard-card [icon]="'assets/icon/avatar-red.png'" [number]="'0'" [title]="'Total Sold Item'"></dashboard-card>
+      </ion-col>
+      <ion-col size="12" size-md="3">
+        <dashboard-card [icon]="'assets/icon/avatar-orange.png'" [number]="'0'" [title]="'Total Order Recieved'"></dashboard-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
